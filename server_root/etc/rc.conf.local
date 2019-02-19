@@ -1,0 +1,11 @@
+dhcpd_flags=""
+tftpd_flags=""
+rarpd_flags="-a"
+bootparamd_flags=""
+mountd_flags=""
+nfsd_flags="-tun 4"
+portmap_flags=""
+
+#nfs_server_enable="YES"
+#portmap="YES"
+#nfs_server="YES"

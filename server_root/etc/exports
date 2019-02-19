@@ -1,0 +1,2 @@
+#/srv/nfs/root	192.168.1.112(rw)
+/srv/nfs/root -maproot=root -alldirs 192.168.1.112

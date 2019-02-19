@@ -1,0 +1,3 @@
+rpi-diskless	root=192.168.1.179:/srv/nfs/root \
+		swap=192.168.1.179:/srv/nfs/swap \
+		dump=192.168.1.179:/srv/nfs/swap

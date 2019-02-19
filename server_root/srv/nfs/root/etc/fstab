@@ -1,0 +1,2 @@
+openbsd64-virt:/srv/nfs/root     /       nfs     tcp,rw      0       0
+openbsd64-virt:/srv/nfs/swap     none    swap    sw,nfsmntpt=/swap
