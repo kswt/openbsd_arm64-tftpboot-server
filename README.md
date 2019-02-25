@@ -14,17 +14,33 @@
 	dd if=/dev/zero of=/srv/nfs/swap bs=1M count=128
 
 # This directory:
-1. Rename server_root/tftpboot/ID to your Raspberry ID
-2. check EVERY file
-except server_root/etc/rc.conf.local and server_root/tftpboot/*
+1. Rename 
+
+	server_root/tftpboot/ID
+
+to your Raspberry ID
+
+2. check EVERY file at 
+
+	server_root/etc 
+
+except
+
+	server_root/etc/rc.conf.local;
+
 to replace IP, MAC and hostnames to yours.
 
-Default parameters:
-Server IP: 192.168.1.179
-Client IP: 192.168.1.112
+3. Replace server IP in
 
-3. Copy all files to server's root.
+	server_root/srv/nfs/root/etc/fstab
+
+Default parameters:
+
+	Server IP: 192.168.1.179
+	Client IP: 192.168.1.112
+
+4. Copy all files to server's root.
 
 # Default credentials:
-Username: root
-Password: <empty>
+	Username: root
+	Password: <empty>
