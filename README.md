@@ -5,6 +5,10 @@
 	wget https://mirror.yandex.ru/openbsd/6.4/arm64/base64.tgz
 	tar -xvzf base64.tgz -C /srv/nfs/root
 	tar -xvzf /srv/nfs/root/var/sysmerge/etc.tgz -C /srv/nfs/root
+	chmod 777 /srv/nfs/root/tmp
+
+	cd /srv/nfs/root/dev/
+	./MAKEDEV all
 	
 	mkdir /srv/nfs/root/swap
 	dd if=/dev/zero of=/srv/nfs/swap bs=1M count=128
