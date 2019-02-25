@@ -4,8 +4,7 @@
 	mkdir -p /srv/nfs/root
 	wget https://mirror.yandex.ru/openbsd/6.4/arm64/base64.tgz
 	tar -xvzf base64.tgz -C /srv/nfs/root
-	tar -xvzf /srv/nfs/root/var/sysmerge/etc.tgz -C /
-	chmod 777 /tmp/
+	tar -xvzf /srv/nfs/root/var/sysmerge/etc.tgz -C /srv/nfs/root
 	
 	mkdir /srv/nfs/root/swap
 	dd if=/dev/zero of=/srv/nfs/swap bs=1M count=128
